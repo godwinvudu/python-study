@@ -1,0 +1,6 @@
+mass=float(input("enter mass in kg:"))
+height=float(input("enter hieght in meters:"))
+y=(height)
+x=(mass)
+bmi=x/(y**2)
+print(round(bmi))
