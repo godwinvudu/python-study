@@ -7,11 +7,27 @@ def user_validation():
     password=input("enter password: ")
 
     while len(password) < 6:
-            password= input("password too short.Enter new password: ")
+            password= input("password too short.Enter new password:")
 
+    print(" \n")    
     print(f"welcome {first_name} {last_name}")
+    print(" ")
+    
 
 user_validation()
+
+import datetime
+def logday():
+    year = int(input('Enter a year: '))
+    month = int(input('Enter a month :'))
+    day = int(input('Enter a day: '))
+    date1 = datetime.date(year, month, day)
+
+
+logday()
+
+def logmessaage():
+     mesage=input("Enter 'entry' : ")
 
 
 
