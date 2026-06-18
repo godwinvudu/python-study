@@ -12,9 +12,10 @@ def user_validation():
     print(" \n")    
     print(f"welcome {first_name} {last_name}")
     print(" ")
-    
 
 user_validation()
+    
+
 
 import datetime
 def logday():
@@ -27,7 +28,16 @@ def logday():
 logday()
 
 def logmessaage():
-     mesage=input("Enter 'entry' : ")
+     mesage=input("what happened today? : ")
+
+logmessaage()
+
+
+def want_to_see():
+    print("open 'diary'?")
+    name=input("what's your name :")
+    password_1=input("enter password: ")
+   
 
 
 
