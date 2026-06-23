@@ -9,3 +9,16 @@ def concession():
   print("Candy: $3-5")
   print("Soft drink: $5-7")
 concession()
+
+def extra_lot(): 
+   """Output extra parking lot info.""" 
+   print("Take the second right to park.") 
+ 
+def park_greet(): 
+   """Output greeting.""" 
+   print("Welcome. Open sunrise to sunset.") 
+ 
+car_count = 1 
+park_greet() 
+if car_count > 50: 
+   extra_lot() 
