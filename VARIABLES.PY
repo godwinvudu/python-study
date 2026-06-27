@@ -22,10 +22,13 @@ print(y)
 #remainder
 print(15%2)
 #calculating bmi excercise
-mass=120
-height=2.2
-bmi=mass/(height**2)
-print(bmi)
+def bmi():
+   mass=120
+   height=2.2
+   bmi=mass/(height**2)
+   print(bmi)
+bmi() 
+
 print("")
 
 #asking for an input
