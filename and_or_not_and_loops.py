@@ -17,4 +17,9 @@ def main():
         print(i,message)
         i+=1
 #main()
-#i want to execute other commands
+ #i want to execute other commands above 
+
+def main():
+    number=int(input("enter a number (except 1):"))
+    while number:
+    
