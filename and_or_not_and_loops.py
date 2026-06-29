@@ -4,7 +4,7 @@
 #not
 x=6
 y=0
-legal=(y==0 or x/1==6)
+legal=(y==0 or x/1!=6)
 print(legal)
 #loops
 #while loops
