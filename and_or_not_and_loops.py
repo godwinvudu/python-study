@@ -18,8 +18,40 @@ def main():
         i+=1
 #main()
  #i want to execute other commands above 
+def check_if_prime(n):
+  if n<=1:
+    return False
+  for i in range(2,int(n**0.5)+1):
+     if n%i ==0:
+        return False
+  return True
+
+
 
 def main():
-    number=int(input("enter a number (except 1):"))
-    while number:
+    while True:
+        user_input=input("enter a number or type exit(to exit code):")
+        if user_input.lower()=="exit":
+           print("good bye")
+           break
+           
+        number=int(user_input)
+    
+        even = number % 2==0
+        odd = number % 2!=0
+        prime=check_if_prime(number)
+        if even and prime:
+           print(f"{number} is even and prime ")
+           
+        elif even:
+            print(f"{number} is even")
+        if odd and prime:
+            print(f"{number} is odd and a prime ")
+        elif odd:
+            print(f"{number} is odd")
+        
+        
+main()
+
+
     
