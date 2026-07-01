@@ -7,6 +7,7 @@ print(sum(2, 3))
 
 #ask user for name
 def username():
+    print("you are about to play a game of rock paper scissors!")
     user_name=input("enter username:" )
     while True:
         want_to_play=input(f"hey {user_name} ready to play rock ,paper,sciscors :").lower()
@@ -40,7 +41,20 @@ def rounds():
 
 def machine_choice():
     from random import choice
-    
+    options=["rock","paper","scissors"]
+    computer_pick=choice(options)
+
+
+    return computer_pick
+
+def player_choice():
+    while True:
+        user_pick=input("type in your move").lower()
+    if user_Pick=="rock" or user_pick=="paper"or user_pick=="scissors":
+        return user_pick
+    else:
+        print("invalid option!")
+
 
     
 def main():
