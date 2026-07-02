@@ -100,7 +100,7 @@ def main():
             computerscore+=1
         
     print(f"\n===Final score===")
-    print(f"player score is {playerscore} | machine score is{computerscore}")
+    print(f"player score is {playerscore} | machine score is {computerscore}")
     
     ag=again()
 
