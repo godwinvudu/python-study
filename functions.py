@@ -10,11 +10,11 @@ def username():
     print("you are about to play a game of rock paper scissors!")
     user_name=input("enter username:" )
     while True:
-        want_to_play=input(f"hey {user_name} ready to play rock ,paper,sciscors :").lower()
+        want_to_play=input(f"hey {user_name} ready to play rock ,paper,scissors :").lower()
     
         if want_to_play=="no" :
             print("good bye then")
-            break
+            exit()
 
         elif want_to_play=="yes":
             print("ok lets's do this")
