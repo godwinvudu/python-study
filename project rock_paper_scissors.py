@@ -50,11 +50,11 @@ def machine_choice():
 
 def player_choice():
     while True:
-        user_pick=input("type in your move").lower()
-    if user_pick=="rock" or user_pick=="paper"or user_pick=="scissors":
-        return user_pick
-    else:
-        print("invalid option!")
+        user_pick=input("type in your move: ").lower()
+        if user_pick=="rock" or user_pick=="paper"or user_pick=="scissors":
+         return user_pick
+        else:
+            print("invalid option!")
 
 def game_logic():
     userpick=player_choice()
@@ -88,13 +88,13 @@ def main():
             computer_score+=1
         
     print(f"\n===Final score===")
-    print(f"player score={player_score} | machine score={machine_choice}")
+    print(f"player score is {player_score} | machine score is{computer_score}")
  
 main()
 
 def again():
     while True:
-        again_=input(print("wish to play again!:")).lower()
+        again_=input("wish to play again!:").lower()
         if again_=="yes":
             print("alright lets do this")
             return main()
@@ -102,5 +102,8 @@ def again():
            print("goodbye for now.")
            exit()
         else:
-            print
+            print("invalid input/ enter a yes or no.")
+            
+again()
+        
 
