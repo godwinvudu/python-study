@@ -65,7 +65,7 @@ def game_logic():
         print(f"haha i win!")
     
     return game_logic
-
+#if they want to play again
 def again():
     while True:
         again_=input("wish to play again!:").lower()
@@ -80,7 +80,7 @@ def again():
 
         return again
     
-    
+#execute everything
 def main():
     start_1=username()
     total_rounds=rounds()
@@ -100,7 +100,7 @@ def main():
     print(f"player score is {playerscore} | machine score is{computerscore}")
     
     ag=again()
-    
+
 main()
 
 
