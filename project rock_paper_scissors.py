@@ -60,7 +60,7 @@ def game_logic():
     userpick=player_choice()
     computerpick=machine_choice()
     print(f"you chose {userpick}")
-    print(f"machine chose{computerpick}")
+    print(f"machine chose {computerpick}")
     if userpick==computerpick:
         print("its a tie")
     elif (userpick=="rock"and computerpick=="scissors")or\
