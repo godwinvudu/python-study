@@ -1,10 +1,3 @@
-def sum(x, y):
-    return x + y    
-#call back functions
-
-print(sum(2, 3))
-#rock paper sciscors game
-
 #ask user for name
 def username():
     print("you are about to play a game of rock paper scissors!")
