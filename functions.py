@@ -50,7 +50,7 @@ def machine_choice():
 def player_choice():
     while True:
         user_pick=input("type in your move").lower()
-    if user_Pick=="rock" or user_pick=="paper"or user_pick=="scissors":
+    if user_pick=="rock" or user_pick=="paper"or user_pick=="scissors":
         return user_pick
     else:
         print("invalid option!")
