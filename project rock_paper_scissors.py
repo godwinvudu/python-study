@@ -33,7 +33,7 @@ def rounds():
             break
 
     return rounds_
-
+#machines choice
 def machine_choice():
     from random import choice
     options=["rock","paper","scissors"]
