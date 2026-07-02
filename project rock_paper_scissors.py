@@ -57,6 +57,8 @@ def game_logic():
     print(f"machine chose {computerpick}")
     if userpick==computerpick:
         print("its a tie")
+        return "tie"
+
     elif (userpick=="rock"and computerpick=="scissors")or\
          (userpick=="paper"and computerpick=="rock")or\
          (userpick=="scissors"and computerpick=="paper"):
@@ -66,7 +68,7 @@ def game_logic():
         print(f"haha i win!")
         return "computer"
     
-    return game_logic
+
 
 #if they want to play again
 def again():
