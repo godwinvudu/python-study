@@ -1,3 +1,4 @@
+#rock paper sciscors game
 #ask user for name
 def username():
     print("you are about to play a game of rock paper scissors!")
@@ -62,28 +63,8 @@ def game_logic():
         print("you win!")
     else:
         print(f"haha i win!")
-
-
     
-def main():
-    start_1=username()
-    total_rounds=rounds()
-
-    playerscore=0
-    computerscore=0
-    for round_num in range(total_rounds):
-        print(f"\--Round{round_num +1}---")
-        result=game_logic()
-
-        if result=="player":
-            player_score +=1
-        elif result== "computer":
-            computer_score+=1
-        
-    print(f"\n===Final score===")
-    print(f"player score is {player_score} | machine score is{computer_score}")
- 
-main()
+    return game_logic
 
 def again():
     while True:
@@ -96,7 +77,34 @@ def again():
            exit()
         else:
             print("invalid input/ enter a yes or no.")
+
+        return again
+    
+    
+def main():
+    start_1=username()
+    total_rounds=rounds()
+
+    playerscore=0
+    computerscore=0
+    for round_num in range(total_rounds):
+        print(f"\--Round{round_num +1}---")
+        result=game_logic()
+
+        if result=="player":
+            playerscore +=1
+        elif result== "computer":
+            computerscore+=1
+        
+    print(f"\n===Final score===")
+    print(f"player score is {playerscore} | machine score is{computerscore}")
+    
+    ag=again()
+    
+main()
+
+
             
-again()
+
         
 
