@@ -61,10 +61,12 @@ def game_logic():
          (userpick=="paper"and computerpick=="rock")or\
          (userpick=="scissors"and computerpick=="paper"):
         print("you win!")
+        return "player"
     else:
         print(f"haha i win!")
+        return "computer"
     
-    return game_logic()
+    return game_logic
 
 #if they want to play again
 def again():
