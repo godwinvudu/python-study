@@ -16,6 +16,7 @@ def username():
             print("good bye then")
             exit()
 
+
         elif want_to_play=="yes":
             print("ok lets's do this")
             break
@@ -55,11 +56,29 @@ def player_choice():
     else:
         print("invalid option!")
 
+def game_logic():
+    userpick=player_choice()
+    computerpick=machine_choice()
+    print(f"you chose {userpick}")
+    print(f"machine chose{computerpick}")
+    if userpick==computerpick:
+        print("its a tie")
+    elif (userpick=="rock"and computerpick=="scissors")or\
+         (userpick=="paper"and computerpick=="rock")or\
+         (userpick=="scissors"and computerpick=="paper"):
+        print("you win!")
+    else:
+        print(f"haha i win!")
+
 
     
 def main():
     start_1=username()
     total_rounds=rounds()
+
+    playerscore=0
+    computerscore=0
+
     
 main()
 
