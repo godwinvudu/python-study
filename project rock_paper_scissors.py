@@ -64,7 +64,8 @@ def game_logic():
     else:
         print(f"haha i win!")
     
-    return game_logic
+    return game_logic()
+
 #if they want to play again
 def again():
     while True:
