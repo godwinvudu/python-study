@@ -49,7 +49,7 @@ def player_choice():
          return user_pick
         else:
             print("invalid option!")
-
+#game logic.
 def game_logic():
     userpick=player_choice()
     computerpick=machine_choice()
