@@ -41,7 +41,7 @@ def machine_choice():
 
 
     return computer_pick
-
+#asking for player move
 def player_choice():
     while True:
         user_pick=input("type in your move: ").lower()
