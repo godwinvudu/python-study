@@ -23,14 +23,17 @@ def username():
 def rounds():
    
     while True:
-        rounds_=int(input("how many rounds: "))
-        print(" ")
-        if rounds_<=0:
-            print("no negatives or zero rounds allowed")
+        try:
+            rounds_=int(input("how many rounds: "))
+            print(" ")
+            if rounds_<=0:
+                print("no negatives or zero rounds allowed")
 
-        else:
-            print(f"alright, we are playing {rounds_} rounds")
-            break
+            else:
+                print(f"alright, we are playing {rounds_} rounds")
+                return rounds_
+        except ValueError:
+            print
 
     return rounds_
 #machines choice
