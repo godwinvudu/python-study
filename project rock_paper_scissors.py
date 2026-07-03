@@ -86,8 +86,7 @@ def again():
         else:
             print("invalid input/ enter a yes or no.")
 
-        return again
-    
+      
 #execute everything
 def main():
     start_1=username()
