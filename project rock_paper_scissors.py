@@ -33,7 +33,7 @@ def rounds():
                 print(f"alright, we are playing {rounds_} rounds")
                 return rounds_
         except ValueError:
-            print
+            print("invalid input!PLEASE ENTER A WHOLE NUMBER: ")
 
     return rounds_
 #machines choice
