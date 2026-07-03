@@ -99,15 +99,15 @@ def main():
           print(f"\--Round{round_num +1}---")
           result=game_logic()
 
-        if result=="player":
+        if result == "player":
             playerscore +=1
-        elif result== "computer":
-            computerscore+=1
+        elif result == "computer":
+            computerscore +=1
         
         print(f"\n===Final score===")
         print(f"player score is {playerscore} | machine score is {computerscore}")
     
-        ag=again()
+        ag = again()
 
 main()
 
