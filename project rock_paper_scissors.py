@@ -31,7 +31,7 @@ def rounds():
 
             else:
                     print(f"alright, we are playing {rounds_} rounds")
-            return rounds_
+                    return rounds_
         except ValueError:
             print("invalid input!PLEASE ENTER A WHOLE NUMBER: ")
 
