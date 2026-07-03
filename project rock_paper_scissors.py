@@ -62,9 +62,9 @@ def game_logic():
         print("its a tie")
         return "tie"
 
-    elif (userpick=="rock"and computerpick=="scissors")or\
-         (userpick=="paper"and computerpick=="rock")or\
-         (userpick=="scissors"and computerpick=="paper"):
+    elif (userpick=="rock" and computerpick=="scissors")or\
+         (userpick=="paper" and computerpick=="rock")or\
+         (userpick=="scissors" and computerpick=="paper"):
         print("you win!")
         return "player"
     else:
