@@ -27,15 +27,15 @@ def rounds():
             rounds_=int(input("how many rounds: "))
             print(" ")
             if rounds_<=0:
-                print("no negatives or zero rounds allowed")
+                    print("no negatives or zero rounds allowed")
 
             else:
-                print(f"alright, we are playing {rounds_} rounds")
-                return rounds_
+                    print(f"alright, we are playing {rounds_} rounds")
+            return rounds_
         except ValueError:
             print("invalid input!PLEASE ENTER A WHOLE NUMBER: ")
 
-    return rounds_
+        
 #machines choice
 def machine_choice():
     from random import choice
@@ -79,7 +79,7 @@ def again():
         again_=input("wish to play again!:").lower()
         if again_=="yes":
             print("alright lets do this")
-            return main()
+            return True
         elif again_=="no":
            print("goodbye for now.")
            exit()
@@ -90,23 +90,24 @@ def again():
 #execute everything
 def main():
     start_1=username()
-    total_rounds=rounds()
+    while True:
+        total_rounds=rounds()
 
-    playerscore=0
-    computerscore=0
-    for round_num in range(total_rounds):
-        print(f"\--Round{round_num +1}---")
-        result=game_logic()
+        playerscore=0
+        computerscore=0
+        for round_num in range(total_rounds):
+          print(f"\--Round{round_num +1}---")
+          result=game_logic()
 
         if result=="player":
             playerscore +=1
         elif result== "computer":
             computerscore+=1
         
-    print(f"\n===Final score===")
-    print(f"player score is {playerscore} | machine score is {computerscore}")
+        print(f"\n===Final score===")
+        print(f"player score is {playerscore} | machine score is {computerscore}")
     
-    ag=again()
+        ag=again()
 
 main()
 
