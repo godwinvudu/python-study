@@ -2,4 +2,5 @@
 #comparin
 time_string ="13:46"
 minutes =time_string[3:5]
-print()
+hour= time_string[7:9]
+print(hour)
