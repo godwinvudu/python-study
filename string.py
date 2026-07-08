@@ -17,3 +17,8 @@ upper_1()
 time_string="12:18666"
 minutes=time_string[3:8]
 print(minutes)
+def x():
+    x='192:67'
+    x="1921:67"
+    print(x)
+x()
