@@ -31,3 +31,6 @@ b="a"in a
 q="z" in a
 print(b)
 print(q)
+#in in loops(for)
+for n in "string": 
+  print(n, end = "") 
