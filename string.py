@@ -61,3 +61,6 @@ print("aaa".count("a"))
 #find() returns the indexc of the first occurence of asubstring
 print("banana".find("a"))
 #index()-returns the  string at that index 
+time_string = "The time is 12:50" 
+index = time_string.index(":") 
+print(time_string[index+1:index+3])
