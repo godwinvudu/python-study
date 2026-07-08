@@ -34,7 +34,8 @@ print(q)
 #in in loops(for)
 for n in "string": 
   print(n, end = " ") 
-  
+# 
+
   count = 0 
 for c in "abca": 
   if c == "a": 
