@@ -22,3 +22,6 @@ def x():
     x="2" +x[1:]#replacing the first character of the string
     print(x)
 x()
+str = "morning" 
+str = str[1] 
+print(str)
