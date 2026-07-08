@@ -25,3 +25,9 @@ x()
 str = "morning" 
 str = str[1] 
 print(str)
+#in operator
+a="umbrella"
+b="a"in a
+q="z" in a
+print(b)
+print(q)
