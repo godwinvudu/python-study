@@ -19,6 +19,6 @@ minutes=time_string[3:8]
 print(minutes)
 def x():
     x='192:67'
-    x="1921:67"
+    x="2" +x[1:]#replacing the first character of the string
     print(x)
 x()
