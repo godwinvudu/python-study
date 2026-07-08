@@ -52,3 +52,4 @@ for i in word:
   break
 
 #count()-counts number of occurences of a substring in a given string
+print("aaa".count("a"))
