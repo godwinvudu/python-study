@@ -60,4 +60,4 @@ print("aaa".count("a"))
 
 #find() returns the indexc of the first occurence of asubstring
 print("banana".find("a"))
-#index()returns the index of the first 
+#index()-returns the  string at that index 
