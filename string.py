@@ -64,4 +64,5 @@ print("banana".find("a"))
 time_string = "The time is 12:50" 
 index = time_string.index(":") 
 print(time_string[index+1:index+3])
-#replacement fields-
+#replacement fields- are used to define a pattern for creating multiple string values that comply with a given 
+format
