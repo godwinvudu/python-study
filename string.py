@@ -34,10 +34,21 @@ print(q)
 #in in loops(for)
 for n in "string": 
   print(n, end = " ") 
-# 
+  break
 
   count = 0 
 for c in "abca": 
   if c == "a": 
     count += 1 
 print(count)
+word = "cab" 
+for i in word: 
+  if i == "a": 
+    print("A", end = "") 
+  if i == "b": 
+    print("B", end = "") 
+  if i == "c": 
+    print("C", end = "") 
+  break
+
+#count()-counts number of occurences of a substring in a given string
