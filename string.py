@@ -33,4 +33,4 @@ print(b)
 print(q)
 #in in loops(for)
 for n in "string": 
-  print(n, end = "") 
+  print(n, end = " ") 
