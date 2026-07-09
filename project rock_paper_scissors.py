@@ -109,8 +109,6 @@ def main():
         ag = again()
 
 main()
-s=("HELLO,I AM {}")
-print(s.format())
 
             
 
