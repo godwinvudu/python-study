@@ -17,5 +17,6 @@ def collect_rainfall():
     total=(day_1+day_2+day_3+day_4+day_5+day_6+day_7)
     return total
 result=collect_rainfall()
-print(f"Recorded amount: {result}")
+print(f"total rainfall: {result}")
+
 def analyze_rainfall():
