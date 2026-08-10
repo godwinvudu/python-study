@@ -1,6 +1,6 @@
 def collect_rainfall():
     bootstrap = "Enter rainfall amount for"
-    day_one = float(input(f"{bootstrap} day one: "))
+    day_1 = float(input(f"{bootstrap} day one: "))
 
     day_2=float(input(f"{bootstrap} day two: "))
 
@@ -14,6 +14,6 @@ def collect_rainfall():
 
     day_6=float(input(f"{bootstrap} day seven: "))
 
-    total
+    total=
 result=collect_rainfall()
 print(f"Recorded amount: {result}")
