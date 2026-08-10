@@ -20,8 +20,13 @@ result=collect_rainfall()
 
 
 def analyze_rainfall(total):
-    total_rainfall=total
+    total_rainfall = total
     if total_rainfall < 50:
-        print("its a dry week")
-    elif (total_rainfall>50 < 100):
-        print
+        print("It's a dry week")
+    elif 50 <= total_rainfall < 100:
+        print("It's a moderate week")
+    else:
+        print("It's a wet week")
+
+
+analyze_rainfall(result)
