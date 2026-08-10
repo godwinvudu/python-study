@@ -23,5 +23,5 @@ def analyze_rainfall(total):
     total_rainfall=total
     if total_rainfall < 50:
         print("its a dry week")
-    else:
-        pr
+    elif (total_rainfall>50 < 100):
+        print
