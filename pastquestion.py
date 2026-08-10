@@ -1,5 +1,5 @@
 def collect_rainfall():
-    bootstrap = "Enter rainfall amount for"
+    bootstrap = "Enter rainfall amount(in mm) for"
     day_1 = float(input(f"{bootstrap} day one: "))
 
     day_2=float(input(f"{bootstrap} day two: "))
