@@ -20,3 +20,4 @@ result=collect_rainfall()
 print(f"total rainfall: {result}")
 
 def analyze_rainfall():
+if result()
