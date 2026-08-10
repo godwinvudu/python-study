@@ -18,3 +18,4 @@ def collect_rainfall():
     return total
 result=collect_rainfall()
 print(f"Recorded amount: {result}")
+def analyze_rainfall():
