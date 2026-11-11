@@ -1,3 +1,7 @@
+from pathlib import Path
+import os
+
+
 def name():
     
  while True:
@@ -26,6 +30,17 @@ while True:
 
 def file_maker():
    print("let's make a file")
+   print("first,lets create a folder for the file:")
+   
+   while True:
+    folder_name=input("enter folder name(no spaces):")
+    if folder_name and " " not in folder_name:
+        print("folder name is eligible")
+        break
+    else:
+        print("folder name is not eligible")
+        print("try again")
+        
    
    while True:
     file_name=input("enter filename(no spaces):")
@@ -52,7 +67,9 @@ def file_maker():
       
             
         if confirming.lower()=="yes":
-                new_file=open(file_name,"w")
+                os.makedirs(folder_name, exist_ok=True)
+                file_path=Path(folder_name )/ file_name
+                new_file=open(file_path,"w")
                 new_file.write(content)
                 new_file.close()
                 break
@@ -62,4 +79,5 @@ def file_maker():
         else:
                 print("invalid input.either a yes or no needed")
                 print("try again")
+        
 file_maker()
